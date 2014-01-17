@@ -1,14 +1,15 @@
 package
 {
-	import org.flixel.FlxSprite;
+
 	import org.flixel.FlxG;
 	import org.flixel.FlxObject;
+	import abstract.*;
 	
-	public class Player extends FlxSprite
+	public class Player extends AbstractMatriochka
 	{
 		[Embed(source = 'assets/matriochkaDefaultAnimation.png')] private var playerPNG:Class;
 		
-		public var jumping:Boolean;
+		
 		
 		
 		public function Player(X:Number=0, Y:Number=0, SimpleGraphic:Class=null)

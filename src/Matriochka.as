@@ -1,7 +1,7 @@
 package
 {
 	import org.flixel.*; 
-	[SWF(width="1768", height="1366", frameRate="60", backgroundColor="#ffffff")] 
+	[SWF(width="766", height="1768", frameRate="60", backgroundColor="#ffffff")] 
 	
 	
 	public class Matriochka extends FlxGame
