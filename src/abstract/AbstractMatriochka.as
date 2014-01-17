@@ -1,5 +1,6 @@
 package abstract
 {
+	import Box2D.*;
 	import org.flixel.FlxSprite;
 	import flash.events.*;
 	
