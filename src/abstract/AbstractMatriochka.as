@@ -9,7 +9,7 @@ package abstract
 		static public const STATES:Array=["inside","outside","master"];
 		static public const SIZES:Array=["S","M","L"];
 		
-		protected var currentState:String;
+		protected var _currentState:String;
 		protected var _size:String;
 		
 		public var jumping:Boolean;
@@ -30,7 +30,7 @@ package abstract
 			if (!(this.isCurrentState(newState))) return;
 			else
 			{
-				this.currentState=newState;
+				this._currentState=newState;
 			}
 		}
 		
@@ -47,7 +47,7 @@ package abstract
 		protected function isCurrentState(sentState:String):Boolean
 		{
 			var current:Boolean=false;
-			if (sentState==currentState) current=true;
+			if (sentState==this._currentState) current=true;
 			
 			return current;
 		}	
